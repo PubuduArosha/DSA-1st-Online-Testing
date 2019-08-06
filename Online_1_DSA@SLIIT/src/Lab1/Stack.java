@@ -24,7 +24,7 @@ public class Stack {
 	}
 	
 	public int pop() {
-		if( top == 0 ) {
+		if( top == -1 ) {
 			System.out.println("Stack is Empty");
 			return -99;
 		}
@@ -36,7 +36,7 @@ public class Stack {
 	}
 	
 	public void peek() {
-		if( top == 0 ) {
+		if( top == -1 ) {
 			System.out.println("stack is Empty");
 		}
 		else
@@ -44,10 +44,10 @@ public class Stack {
 	}
 	
 	public boolean isEmpty() {
-		return ( top == 0);
+		return ( top == -1 );
 	}
 	
 	public boolean isFull() {
-		return ( nItems == maxSize-1 );
+		return ( top == maxSize-1 );
 	}
 }
