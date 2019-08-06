@@ -12,14 +12,31 @@ public class CheckValidFunctionApp {
 		System.out.print("Enter Fuction : ");
 		String ex = s.next();
 		
-		for ( int c = 0 ; c < ex.length() ; c++ ) {
+		/*for ( int c = 0 ; c < ex.length() ; c++ ) {
 			if( ex.charAt(c) == '(' ) {
 				ckf.push(ex.charAt(c));
 			}
 			else if(ex.charAt(c) == ')' ) {
 				ckf.pop();
 			}
+		}*/
+		
+		for( int i = 0 ; i < ex.length() ; i++) {
+			if(ex.charAt(i) == '(') {
+				ckf.push('(');
+			}
+			else if(ex.charAt(i) == ')') {
+				char c; 
+				ckf.pop();
+				
+				/*if(c != '(') {
+					System.out.println("Invalid String");
+					return;
+				}*/
+			}
 		}
+		
+		
 		
 		if( ckf.isEmpty() ) {
 			System.out.println("Valid Function");
