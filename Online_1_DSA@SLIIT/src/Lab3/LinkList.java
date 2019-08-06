@@ -2,7 +2,7 @@ package Lab3;
 
 public class LinkList {
 
-	Link first;
+	public Link first;
 	
 	public LinkList() {
 		first = null;
@@ -17,13 +17,13 @@ public class LinkList {
 			}
 			
 			System.out.println(" ");
-		
+	
 	}
 	
-	public void insert(String name , double avarage ) {
+	public void insertFirst(String name , double avarage ) {
 		Link l = new Link( name , avarage );
 		l.next = first;
-		l = first;
+		first = l;
 	}
 	
 	public void deleteFirst() {

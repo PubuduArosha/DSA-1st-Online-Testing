@@ -4,7 +4,7 @@ public class Link {
 
 	public String name;
 	public Link next;
-	double average;
+	public double average;
 	
 	public Link( String n , double a ) {
 		name = n;
