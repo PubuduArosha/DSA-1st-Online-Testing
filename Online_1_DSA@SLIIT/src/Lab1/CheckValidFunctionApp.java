@@ -26,7 +26,7 @@ public class CheckValidFunctionApp {
 				ckf.push('(');
 			}
 			else if(ex.charAt(i) == ')') {
-				char c; 
+				//char c; 
 				ckf.pop();
 				
 				/*if(c != '(') {
