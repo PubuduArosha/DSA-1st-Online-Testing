@@ -12,8 +12,13 @@ public class LinkedListApp {
 		System.out.println("Displaying List");
 		ll.displayList();
 		
+		System.out.println();
+		System.out.println("Delete Aravindra");
+		ll.deleteLink("Nipuna");
 		
-	
+		System.out.println();
+		System.out.println("Display new List");
+		ll.displayList();
 		
 	}
 	
