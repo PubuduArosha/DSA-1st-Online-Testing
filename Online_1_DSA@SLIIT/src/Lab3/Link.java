@@ -2,8 +2,8 @@ package Lab3;
 
 public class Link {
 
-	String name;
-	Link next;
+	public String name;
+	public Link next;
 	double average;
 	
 	public Link( String n , double a ) {
