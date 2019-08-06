@@ -2,7 +2,7 @@ package Lab1;
 
 public class Stack {
 
-	int nItems;
+	//int nItems;
 	int top;
 	int maxSize;
 	int stackArray[];
@@ -10,33 +10,33 @@ public class Stack {
 	public Stack ( int s ) {
 		maxSize = s;
 		stackArray = new int[s];
-		nItems = 0;
+		//nItems = 0;
 		top = -1;
 	}
 	
 	public void push( int k ) {
-		if ( nItems == maxSize-1 ) {
+		if ( top == maxSize-1 ) {
 			System.out.println("Stack is Full");
 		}
 		else {
-			stackArray[top++] = k;
+			stackArray[++top] = k;
 		}
 	}
 	
 	public int pop() {
-		if( nItems == 0 ) {
+		if( top == 0 ) {
 			System.out.println("Stack is Empty");
 			return -99;
 		}
 		else {
-			nItems--;
+			//nItems--;
 			return stackArray[top--];
 		}
 			
 	}
 	
 	public void peek() {
-		if(nItems == 0 ) {
+		if( top == 0 ) {
 			System.out.println("stack is Empty");
 		}
 		else
@@ -44,7 +44,7 @@ public class Stack {
 	}
 	
 	public boolean isEmpty() {
-		return ( nItems == 0);
+		return ( top == 0);
 	}
 	
 	public boolean isFull() {
