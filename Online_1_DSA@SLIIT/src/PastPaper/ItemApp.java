@@ -22,7 +22,7 @@ public class ItemApp {
 				
 				ll.insertFirst( item , unitP );	
 				
-				ll.offerDiscount( unitP );
+				ll.offerDiscount();
 
 			}
 			

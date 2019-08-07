@@ -14,19 +14,25 @@ public class LinkedList {
 		first = ii;
 	}
 	
-	public double offerDiscount( double unitP ) {
+	public void offerDiscount( ) {
 		double dis;
-		
-		if ( unitP > 1500 ) {
-			dis = unitP * ( 5.0 / 100 );
-			System.out.println("Unit price : " + unitP );
-			System.out.println("Unit price for Discount : " + dis );
-			return dis;
-		}
-		else {
-			System.out.println("Unit price : " + unitP );
-			System.out.println("No Discount");
-			return -99;
+		Item current = first;
+		while ( current != null ) {
+			if ( current.unitPrice > 1500 ) {
+				dis = current.unitPrice * ( 5.0 / 100 );
+				System.out.println("Unit price : " + current.unitPrice );
+				System.out.println("Unit price for Discount : " + dis );
+				System.out.println();
+				current = current.next;
+				break;
+			}
+			else {
+				System.out.println("Unit price : " + current.unitPrice );
+				System.out.println(1);
+				System.out.println();
+				current = current.next;
+			}
+			
 		}
 	}
 	
