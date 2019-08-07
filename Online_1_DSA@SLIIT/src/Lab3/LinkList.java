@@ -50,31 +50,31 @@ public class LinkList {
 			Link previous = first;
 			Link current = first;
 			
-			if ( current.name == name) {
-				current.displayDetails();
-				first = current.next;
-				return current;
-			}
-			else{
-				while ( current.name != name ) {
-					previous = current;
-					current = current.next;
-					if(current.next == null)
-						break;
+				if ( current.name == name) {
+					current.displayDetails();
+					first = current.next;
+					return current;
+				}
+				else{
+					while ( current.name != name ) {
+						previous = current;
+						current = current.next;
+						if(current.next == null)
+							break;
+					}
+					
 				}
 				
-			}
-				
 			
-			if(current.name == name) {
-				current.displayDetails();
-				previous.next = current.next;
-				return current;
-			}
-			else {
-				System.out.println("Cant find the linked array");
-				return null;
-			}
+				if(current.name == name) {
+					current.displayDetails();
+					previous.next = current.next;
+					return current;
+				}
+				else {
+					System.out.println("Cant find the linked array");
+					return null;
+				}
 		}
 	}
 }
