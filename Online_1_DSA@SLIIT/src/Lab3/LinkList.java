@@ -29,6 +29,7 @@ public class LinkList {
 	public void deleteFirst() {
 		if(first == null ) {
 			System.out.println("LinkList is empty");
+			
 		}
 		else {
 			first.displayDetails();
@@ -51,7 +52,7 @@ public class LinkList {
 			
 			if ( current.name == name) {
 				current.displayDetails();
-				previous.next = current.next;
+				first = current.next;
 				return current;
 			}
 			else{
